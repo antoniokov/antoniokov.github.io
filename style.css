@@ -90,9 +90,37 @@ li {
 	margin-bottom: 0.5em;
 }
 
-li:before {
+.main-list li:before {
 	content: "— ";
 	color: var(--tx-2);
+}
+
+.writing-list {
+	padding-left: 0;
+}
+
+.writing-list li {
+	display: flex;
+	margin-bottom: 0.5em;
+	align-items: baseline;
+}
+
+.writing-list .date {
+	display: inline-block;
+	width: 60px;
+	flex-shrink: 0;
+	color: var(--tx-2);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, monospace;
+	font-size: 0.9em;
+	margin-right: 1em;
+}
+
+.writing-list a {
+	flex: 1;
+}
+
+.writing-list + p {
+	margin-top: 2em;
 }
 
 .embeddable-buttondown-form {
