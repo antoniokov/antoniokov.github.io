@@ -183,6 +183,13 @@ li {
 	vertical-align: middle;
 }
 
+/* Goodreads icon is tall and narrow; scale by height, keep width auto */
+.social-link svg.goodreads {
+	height: 24px;
+	width: auto;
+	margin-left: -4px; /* compensate inner left padding in the SVG viewBox */
+}
+
 .footer {
 	margin-top: 2.5em;
 	padding-top: 1.5em;
