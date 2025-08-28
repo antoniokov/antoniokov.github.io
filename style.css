@@ -1,0 +1,216 @@
+:root {
+	/* Flexoki Light Theme */
+	--bg: #FFFCF0;
+	--bg-2: #F2F0E5;
+	--ui: #E6E4D9;
+	--ui-2: #DAD8CE;
+	--ui-3: #CECDC3;
+	--tx-3: #B7B5AC;
+	--tx-2: #6F6E69;
+	--tx: #100F0F;
+	--re: #AF3029;
+	--or: #BC5215;
+	--ye: #AD8301;
+	--gr: #66800B;
+	--cy: #24837B;
+	--bl: #205EA6;
+	--pu: #5E409D;
+	--ma: #A02F6F;
+	--re-400: #D14D41;
+	--or-400: #DA702C;
+	--ye-400: #D0A215;
+	--gr-400: #879A39;
+	--cy-400: #3AA99F;
+	--bl-400: #4385BE;
+	--pu-400: #8B7EC8;
+	--ma-400: #CE5D97;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* Flexoki Dark Theme */
+		--bg: #100F0F;
+		--bg-2: #1C1B1A;
+		--ui: #282726;
+		--ui-2: #343331;
+		--ui-3: #403E3C;
+		--tx-3: #575653;
+		--tx-2: #878580;
+		--tx: #CECDC3;
+		--re: #D14D41;
+		--or: #DA702C;
+		--ye: #D0A215;
+		--gr: #879A39;
+		--cy: #3AA99F;
+		--bl: #4385BE;
+		--pu: #8B7EC8;
+		--ma: #CE5D97;
+		--re-400: #AF3029;
+		--or-400: #BC5215;
+		--ye-400: #AD8301;
+		--gr-400: #66800B;
+		--cy-400: #24837B;
+		--bl-400: #205EA6;
+		--pu-400: #5E409D;
+		--ma-400: #A02F6F;
+	}
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	line-height: 1.6;
+	max-width: 680px;
+	margin: 0 auto;
+	padding: 40px 20px;
+	color: var(--tx);
+	background-color: var(--bg);
+}
+
+h3 {
+	margin-top: 2em;
+	margin-bottom: 1em;
+	color: var(--tx);
+}
+
+a {
+	color: var(--gr);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+li {
+	margin-bottom: 0.5em;
+}
+
+li:before {
+	content: "— ";
+	color: var(--tx-2);
+}
+
+.embeddable-buttondown-form {
+	margin: 1em 0 2em 0;
+	display: flex;
+	gap: 0.5em;
+	align-items: center;
+}
+
+.embeddable-buttondown-form input[type="email"] {
+	flex: 1;
+	max-width: 300px;
+	padding: 0.75em;
+	border: none;
+	border-bottom: 1px solid var(--ui-2);
+	border-radius: 0;
+	font-size: 1em;
+	box-sizing: border-box;
+	background: var(--bg);
+	color: var(--tx);
+}
+
+.embeddable-buttondown-form input[type="email"]:focus {
+	outline: none;
+	border-bottom-color: var(--gr);
+}
+
+.embeddable-buttondown-form input[type="submit"] {
+	background: var(--gr);
+	color: var(--bg);
+	border: none;
+	padding: 0.75em 1.5em;
+	border-radius: 4px;
+	font-size: 1em;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.embeddable-buttondown-form input[type="submit"]:hover {
+	background: var(--gr-400);
+}
+
+.social-link {
+	display: inline-flex;
+	align-items: center;
+	margin: 0 0.25em;
+	color: var(--tx-2);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.social-link:hover {
+	color: var(--gr);
+	text-decoration: none;
+}
+
+.social-link svg {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.footer {
+	margin-top: 2.5em;
+	padding-top: 1.5em;
+	border-top: 1px solid var(--ui);
+	text-align: center;
+	color: var(--tx-2);
+	font-size: 0.85em;
+}
+
+.footer p {
+	margin: 0;
+	line-height: 1.4;
+}
+
+.footer a {
+	color: var(--cy);
+}
+
+.footer a:hover {
+	color: var(--cy-400);
+}
+
+.footer a[href*="flexoki"] {
+	color: var(--gr);
+}
+
+.footer a[href*="flexoki"]:hover {
+	color: var(--gr-400);
+}
+
+.belarusian-flag {
+	display: inline-block;
+	width: 18px;
+	height: 12px;
+	margin-left: 0.5em;
+	vertical-align: middle;
+	border: 1px solid var(--ui-2);
+	background: linear-gradient(to bottom, 
+		#FFFFFF 0%, 
+		#FFFFFF 33.33%, 
+		#DC143C 33.33%, 
+		#DC143C 66.67%, 
+		#FFFFFF 66.67%, 
+		#FFFFFF 100%);
+}
+
+.ukrainian-flag {
+	display: inline-block;
+	width: 18px;
+	height: 12px;
+	margin-left: 0.25em;
+	vertical-align: middle;
+	border: 1px solid var(--ui-2);
+	background: linear-gradient(to bottom, 
+		#005BBB 0%, 
+		#005BBB 50%, 
+		#FFD500 50%, 
+		#FFD500 100%);
+}
