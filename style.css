@@ -26,8 +26,9 @@
 	--ma-400: #CE5D97;
 }
 
+/* Dark theme - both for system preference and manual override */
 @media (prefers-color-scheme: dark) {
-	:root {
+	:root:not([data-theme="light"]) {
 		/* Flexoki Dark Theme */
 		--bg: #100F0F;
 		--bg-2: #1C1B1A;
@@ -56,6 +57,35 @@
 	}
 }
 
+/* Manual dark theme override */
+:root[data-theme="dark"] {
+	/* Flexoki Dark Theme */
+	--bg: #100F0F;
+	--bg-2: #1C1B1A;
+	--ui: #282726;
+	--ui-2: #343331;
+	--ui-3: #403E3C;
+	--tx-3: #575653;
+	--tx-2: #878580;
+	--tx: #CECDC3;
+	--re: #D14D41;
+	--or: #DA702C;
+	--ye: #D0A215;
+	--gr: #879A39;
+	--cy: #3AA99F;
+	--bl: #4385BE;
+	--pu: #8B7EC8;
+	--ma: #CE5D97;
+	--re-400: #AF3029;
+	--or-400: #BC5215;
+	--ye-400: #AD8301;
+	--gr-400: #66800B;
+	--cy-400: #24837B;
+	--bl-400: #205EA6;
+	--pu-400: #5E409D;
+	--ma-400: #A02F6F;
+}
+
 body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	line-height: 1.6;
@@ -71,6 +101,47 @@ header {
 	align-items: center;
 	gap: 1em;
 	margin-bottom: 1.5em;
+	position: relative;
+}
+
+.theme-toggle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: none;
+	border: none;
+	color: var(--tx-2);
+	cursor: pointer;
+	padding: 0.5em;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease;
+	margin-left: auto;
+}
+
+.theme-toggle:hover {
+	color: var(--tx);
+	background-color: var(--ui);
+}
+
+.theme-toggle:focus {
+	outline: 2px solid var(--gr);
+	outline-offset: 2px;
+}
+
+.theme-toggle svg {
+	width: 20px;
+	height: 20px;
+}
+
+.theme-toggle .moon-icon {
+	display: none;
+}
+
+.theme-toggle .sun-icon {
+	display: block;
 }
 
 .avatar {
