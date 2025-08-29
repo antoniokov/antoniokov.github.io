@@ -326,17 +326,3 @@ li {
 		#FFFFFF 66.67%, 
 		#FFFFFF 100%);
 }
-
-.ukrainian-flag {
-	display: inline-block;
-	width: 18px;
-	height: 12px;
-	margin-left: 0.25em;
-	vertical-align: middle;
-	border: 1px solid var(--ui-2);
-	background: linear-gradient(to bottom, 
-		#005BBB 0%, 
-		#005BBB 50%, 
-		#FFD500 50%, 
-		#FFD500 100%);
-}
