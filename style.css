@@ -24,6 +24,12 @@
 	--bl-400: #4385BE;
 	--pu-400: #8B7EC8;
 	--ma-400: #CE5D97;
+	
+	/* Language-specific link colors - easy to adjust */
+	--link-english: var(--gr);
+	--link-english-hover: var(--gr-400);
+	--link-russian: var(--ye);
+	--link-russian-hover: var(--ye-400);
 }
 
 /* Dark theme - both for system preference and manual override */
@@ -54,6 +60,12 @@
 		--bl-400: #205EA6;
 		--pu-400: #5E409D;
 		--ma-400: #A02F6F;
+		
+		/* Language-specific link colors - easy to adjust */
+		--link-english: var(--gr);
+		--link-english-hover: var(--gr-400);
+		--link-russian: var(--ye);
+		--link-russian-hover: var(--ye-400);
 	}
 }
 
@@ -84,6 +96,12 @@
 	--bl-400: #205EA6;
 	--pu-400: #5E409D;
 	--ma-400: #A02F6F;
+	
+	/* Language-specific link colors - easy to adjust */
+	--link-english: var(--gr);
+	--link-english-hover: var(--gr-400);
+	--link-russian: var(--ye);
+	--link-russian-hover: var(--ye-400);
 }
 
 body {
@@ -258,13 +276,13 @@ li {
 	display: inline-flex;
 	align-items: center;
 	margin: 0 0.25em;
-	color: var(--tx-2);
+	color: var(--gr);
 	text-decoration: none;
 	transition: color 0.2s ease;
 }
 
 .social-link:hover {
-	color: var(--gr);
+	color: var(--gr-400);
 	text-decoration: none;
 }
 
@@ -325,4 +343,21 @@ li {
 		#DC143C 66.67%, 
 		#FFFFFF 66.67%, 
 		#FFFFFF 100%);
+}
+
+/* Language-specific link styling */
+a.lang-en {
+	color: var(--link-english);
+}
+
+a.lang-en:hover {
+	color: var(--link-english-hover);
+}
+
+a.lang-ru {
+	color: var(--link-russian);
+}
+
+a.lang-ru:hover {
+	color: var(--link-russian-hover);
 }
