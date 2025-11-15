@@ -30,6 +30,8 @@
 	--link-english-hover: var(--gr-400);
 	--link-russian: var(--ye);
 	--link-russian-hover: var(--ye-400);
+	--link-belarusian: var(--cy);
+	--link-belarusian-hover: var(--cy-400);
 }
 
 /* Dark theme - both for system preference and manual override */
@@ -66,6 +68,8 @@
 		--link-english-hover: var(--gr-400);
 		--link-russian: var(--ye);
 		--link-russian-hover: var(--ye-400);
+		--link-belarusian: var(--cy);
+		--link-belarusian-hover: var(--cy-400);
 	}
 }
 
@@ -204,17 +208,17 @@ li {
 	color: var(--tx-2);
 }
 
-.writing-list {
+.year-list {
 	padding-left: 0;
 }
 
-.writing-list li {
+.year-list li {
 	display: flex;
 	margin-bottom: 0.5em;
 	align-items: baseline;
 }
 
-.writing-list .date {
+.year-list .date {
 	display: inline-block;
 	width: 60px;
 	flex-shrink: 0;
@@ -224,11 +228,11 @@ li {
 	margin-right: 1em;
 }
 
-.writing-list a {
+.year-list a {
 	flex: 1;
 }
 
-.writing-list + p {
+.year-list + p {
 	margin-top: 2em;
 }
 
@@ -360,4 +364,12 @@ a.lang-ru {
 
 a.lang-ru:hover {
 	color: var(--link-russian-hover);
+}
+
+a.lang-by {
+	color: var(--link-belarusian);
+}
+
+a.lang-by:hover {
+	color: var(--link-belarusian-hover);
 }
