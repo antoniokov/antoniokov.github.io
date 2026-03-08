@@ -298,6 +298,7 @@ li {
 	height: 24px;
 	width: auto;
 	margin-left: -4px; /* compensate inner left padding in the SVG viewBox */
+	margin-right: -4px; /* compensate inner left padding in the SVG viewBox */
 }
 
 .footer {
